@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>TeamHost - Join now and enjoy mighty movies!</title>
+		<meta content="Templines" name="author">
+		<meta content="TeamHost" name="description">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="format-detection" content="telephone=no">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="referrer" content="no-referrer">
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/libs.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link
+						 href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	   rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	</head>
+
+	<body class="page-home">
+		<input id="toggle" type="checkbox">
+		<script type="text/javascript">
+			document.getElementById("toggle").addEventListener("click", function () {
+				document.getElementsByTagName('body')[0].classList.toggle("dark-theme")
+			});
+		</script>
+		<!-- Loader-->
+		<div id="page-preloader">
+			<div class="preloader-1">
+				<div class="loader-text">Loading</div>
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+				<span class="line line-4"></span>
+				<span class="line line-5"></span>
+				<span class="line line-6"></span>
+				<span class="line line-7"></span>
+				<span class="line line-8"></span>
+				<span class="line line-9"></span>
+			</div>
+		</div>
+		<!-- Loader end-->
+		<div class="page-wrapper">
+			<header class="page-header">
+				<div class="page-header__inner">
+					<div class="page-header__sidebar">
+						<div class="page-header__menu-btn">
+							<button class="menu-btn ico_menu is-active"></button>
+						</div>
+						<div class="page-header__logo">
+							<img src="assets/img/logo.png" alt="logo">
+							<span class="page-header__logo_text">TEAMHOST</span>
+						</div>
+					</div>
+					<div class="page-header__content">
+						<div class="page-header__search">
+							<div class="search">
+								<div class="search__input">
+									<ion-icon name="search-outline"></ion-icon>
+									<input type="search" name="search" placeholder="Search">
+								</div>
+								<div class="search__btn">
+									<button type="button">
+										<ion-icon name="mic-outline"></ion-icon>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="page-header__action">
+							<a class="profile" href="login.html">
+								<img src="assets/img/profile.png" alt="profile">
+							</a>
+							<div class="menu">
+								<h3>John Doe</h3>
+								<ul>
+									<li>
+										<ion-icon name="person-outline"></ion-icon>
+										<a href="profile.html">My Pofile</a>
+									</li>
+									<li>
+										<ion-icon name="log-out-outline"></ion-icon>
+										<a href="/logout">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="page-content">
+				<aside class="sidebar is-show" id="sidebar">
+					<div class="sidebar-box">
+						<ul class="uk-nav">
+							<li class="uk-active">
+								<a href="index.html">
+									<ion-icon name="home-outline"></ion-icon>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Account</li>
+							<li>
+								<a href="profile.html">
+									<ion-icon name="person-outline"></ion-icon>
+									<span>Profile</span>
+								</a>
+							</li>
+							<li>
+								<a href="favourites.html">
+									<ion-icon name="heart-outline"></ion-icon>
+									<span>Favourites</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Main</li>
+							<li>
+								<a href="movies.html">
+									<ion-icon name="videocam-outline"></ion-icon>
+									<span>Movies</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Support</li>
+							<li>
+								<a href="https://movie.douban.com/">
+									<ion-icon name="help-circle-outline"></ion-icon>
+									<span>电影数据来源：豆瓣电影</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<main class="page-main">
+				<div class="uk-grid" data-uk-grid>
+					<div class="uk-width-2-3@l uk-width-3-3@m uk-width-3-3@s">
+						<h3 class="uk-text-lead">Recommended & Featured</h3>
+						<div class="js-recommend">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="recommend-slide">
+											<div class="recommend-slide__box">
+												<div class="recommend-slide__info">
+													<div class="recommend-slide__logo">大话西游之大圣娶亲</div>
+													<div class="recommend-slide__intro">
+														<span>
+															该片主要讲述了至尊宝为了救白晶晶而穿越回到五百年前，遇见紫霞仙子之后发生一段感情
+															并最终成长为孙悟空的故事。
+														</span>
+													</div>
+													<div class="recommend-slide__rating-and-price">
+														<div class="recommend-slide__rating">
+															<span>4.8</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+												<div class="recommend-slide__img">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2455050536.webp"
+				  alt="大话西游之大圣娶亲">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="recommend-slide">
+											<div class="recommend-slide__box">
+												<div class="recommend-slide__info">
+													<div class="recommend-slide__logo">霸王别姬</div>
+													<div class="recommend-slide__intro">
+														<span>
+															该片改编自李碧华的同名小说，围绕两位京剧伶人半个世纪的悲欢离合，展现了对传统文化、
+															人的生存状态及人性的思考与领悟。
+														</span>
+													</div>
+													<div class="recommend-slide__rating-and-price">
+														<div class="recommend-slide__rating">
+															<span>4.8</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+												<div class="recommend-slide__img">
+													<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1488213971.jpg"
+				  alt="霸王别姬">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="recommend-slide">
+											<div class="recommend-slide__box">
+												<div class="recommend-slide__info">
+													<div class="recommend-slide__logo">楚门的世界</div>
+													<div class="recommend-slide__intro">
+														<span>
+															影片讲述了楚门是一档热门肥皂剧的主人公，他身边的所有事情都是虚假的，他的亲人和朋友
+															全都是演员，但他本人对此一无所知。最终楚门不惜一切代价走出了这个虚拟的世界。
+														</span>
+													</div>
+													<div class="recommend-slide__rating-and-price">
+														<div class="recommend-slide__rating">
+															<span>4.7</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+												<div class="recommend-slide__img">
+													<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p479682972.jpg"
+				  alt="楚门的世界">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swipper-nav">
+									<div class="swiper-button-prev">
+										<ion-icon name="chevron-back-outline"></ion-icon>
+									</div>
+									<div class="swiper-button-next">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@l uk-width-3-3@m uk-width-3-3@s">
+						<h3 class="uk-text-lead">Trending Now</h3>
+						<div class="js-trending">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="game-card --horizontal">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1292052" onclick="postMovieId(this)">
+														<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg"
+				   alt="肖申克的救赎" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1292052" onclick="postMovieId(this)">
+														肖申克的救赎
+													</a>
+													<div class="game-card__genre">
+														该片根据斯蒂芬·埃德温·金1982年的中篇小说《肖申克的救赎》改编，主要
+														讲述了银行家安迪因被误判为枪杀妻子及其情人的罪名入狱后，不动声色、
+														步步为营地谋划自我拯救并最终成功越狱，重获自由的故事。
+													</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.7</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card --horizontal">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1295644" onclick="postMovieId(this)">
+														<img src="https://img2.doubanio.com/view/photo/l/public/p511118051.webp"
+				   alt="这个杀手不太冷" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1295644" onclick="postMovieId(this)">
+														这个杀手不太冷
+													</a>
+													<div class="game-card__genre">
+														主要讲述了一名职业杀手——莱昂无意间搭救了一名全家被杀害的叛逆女孩——玛蒂尔达，
+														二人互生情愫的故事。
+													</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.6</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card --horizontal">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="26266893" onclick="postMovieId(this)">
+														<img src="https://img2.doubanio.com/view/photo/l/public/p2545472803.webp"
+				   alt="流浪地球" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="26266893" onclick="postMovieId(this)">
+														流浪地球
+													</a>
+													<div class="game-card__genre">
+														影片根据刘慈欣的同名小说改编，故事背景设定在2075年，讲述了太阳即将毁灭，
+														已经不适合人类生存，而面对绝境，人类将开启“流浪地球”计划，试图带着地球一起
+														逃离太阳系，寻找人类新家园的故事。
+													</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>3.4</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card --horizontal">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1291561" onclick="postMovieId(this)">
+														<img src="https://img1.doubanio.com/view/photo/l/public/p2557573348.webp"
+				   alt="千与千寻" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1291561" onclick="postMovieId(this)">
+														千与千寻
+													</a>
+													<div class="game-card__genre">
+														该片讲述了千寻意外来到神灵世界后，为了救因惩罚而变成猪的家人，经历许多磨难的故事。
+													</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.5</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card --horizontal">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="26752088" onclick="postMovieId(this)">
+														<img src="https://img9.doubanio.com/view/photo/l/public/p2561305376.webp"
+				   alt="我不是药神" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="26752088" onclick="postMovieId(this)">
+														我不是药神
+													</a>
+													<div class="game-card__genre">
+														该片讲述了神油店老板程勇从一个交不起房租的男性保健品商贩，一跃成为印度仿制药“格列宁”独家代理商的故事。
+													</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>3.9</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swipper-nav">
+									<div class="swiper-button-prev">
+										<ion-icon name="chevron-back-outline"></ion-icon>
+									</div>
+									<div class="swiper-button-next">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1">
+						<h3 class="uk-text-lead">Most Popular</h3>
+						<div class="js-popular">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="3011091" onclick="postMovieId(this)">
+														<img src="https://img9.doubanio.com/view/photo/l/public/p524964016.webp"
+				   alt="忠犬八公的故事" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="3011091" onclick="postMovieId(this)">忠犬八公的故事</a>
+													<div class="game-card__genre">剧情</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.7</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1307914" onclick="postMovieId(this)">
+														<img src="https://img2.doubanio.com/view/photo/l/public/p2564556863.webp"
+				   alt="无间道" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1307914" onclick="postMovieId(this)">无间道</a>
+													<div class="game-card__genre">剧情 / 悬疑 / 犯罪</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.6</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="2131459" onclick="postMovieId(this)">
+														<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1461851991.jpg"
+				   alt="机器人总动员" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="2131459" onclick="postMovieId(this)">机器人总动员</a>
+													<div class="game-card__genre">爱情 / 科幻 / 动画 / 冒险</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.6</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="2129039" onclick="postMovieId(this)">
+														<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p485887754.jpg"
+				   alt="飞屋环游记" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="2129039" onclick="postMovieId(this)">飞屋环游记</a>
+													<div class="game-card__genre">剧情 / 喜剧 / 动画 / 冒险</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.5</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1299398" onclick="postMovieId(this)">
+														<img src="https://img9.doubanio.com/view/photo/l/public/p2205913165.webp"
+				   alt="大话西游之月光宝盒" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1299398" onclick="postMovieId(this)">大话西游之月光宝盒</a>
+													<div class="game-card__genre">喜剧 / 爱情 / 奇幻 / 古装</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.5</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="game-card">
+											<div class="game-card__box">
+												<div class="game-card__media">
+													<a href="javascript:void(0);" movie_id="1849031" onclick="postMovieId(this)">
+														<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				   alt="当幸福来敲门" />
+													</a>
+												</div>
+												<div class="game-card__info">
+													<a class="game-card__title" href="javascript:void(0);" movie_id="1849031" onclick="postMovieId(this)">当幸福来敲门</a>
+													<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+													<div class="game-card__rating-and-price">
+														<div class="game-card__rating">
+															<span>4.4</span>
+															<ion-icon name="star" class="star"></ion-icon>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev">
+									<ion-icon name="chevron-back-outline"></ion-icon>
+								</div>
+								<div class="swiper-button-next">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</main>
+			</div>
+		</div>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="assets/js/libs.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			function postMovieId(obj) {
+				var movieId = $(obj).attr("movie_id");
+				$.post(window.globalConfig.baseUrl + "/post_movie_id", {
+					movieId: movieId,
+				});
+				window.location.href = window.globalConfig.baseUrl + "/movie-profile.html";
+			}
+		</script>
+	</body>
+
+</html>

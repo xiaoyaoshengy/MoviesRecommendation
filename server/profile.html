@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>TeamHost - Join now and enjoy mighty movies!</title>
+		<meta content="Templines" name="author">
+		<meta content="TeamHost" name="description">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="format-detection" content="telephone=no">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="referrer" content="no-referrer">
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/libs.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	</head>
+
+	<body class="page-profile">
+		<input id="toggle" type="checkbox">
+		<script type="text/javascript">
+			document.getElementById("toggle").addEventListener("click", function () {
+				document.getElementsByTagName('body')[0].classList.toggle("dark-theme")
+			});
+		</script>
+		<!-- Loader-->
+		<div id="page-preloader">
+			<div class="preloader-1">
+				<div class="loader-text">Loading</div>
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+				<span class="line line-4"></span>
+				<span class="line line-5"></span>
+				<span class="line line-6"></span>
+				<span class="line line-7"></span>
+				<span class="line line-8"></span>
+				<span class="line line-9"></span>
+			</div>
+		</div>
+		<!-- Loader end-->
+		<div class="page-wrapper">
+			<header class="page-header">
+				<div class="page-header__inner">
+					<div class="page-header__sidebar">
+						<div class="page-header__menu-btn">
+							<button class="menu-btn ico_menu is-active"></button>
+						</div>
+						<div class="page-header__logo">
+							<img src="assets/img/logo.png" alt="logo">
+							<span class="page-header__logo_text">TEAMHOST</span>
+						</div>
+					</div>
+					<div class="page-header__content">
+						<div class="page-header__search">
+							<div class="search">
+								<div class="search__input">
+									<ion-icon name="search-outline"></ion-icon>
+									<input type="search" name="search" placeholder="Search">
+								</div>
+								<div class="search__btn">
+									<button type="button">
+										<ion-icon name="mic-outline"></ion-icon>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="page-header__action">
+							<a class="profile" href="login.html">
+								<img src="assets/img/profile.png" alt="profile">
+							</a>
+							<div class="menu">
+								<h3>John Doe</h3>
+								<ul>
+									<li>
+										<ion-icon name="person-outline"></ion-icon>
+										<a href="profile.html">My Pofile</a>
+									</li>
+									<li>
+										<ion-icon name="log-out-outline"></ion-icon>
+										<a href="/logout">Logout</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="page-content">
+				<aside class="sidebar is-show" id="sidebar">
+					<div class="sidebar-box">
+						<ul class="uk-nav">
+							<li>
+								<a href="index.html">
+									<ion-icon name="home-outline"></ion-icon>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Account</li>
+							<li class="uk-active">
+								<a href="profile.html">
+									<ion-icon name="person-outline"></ion-icon>
+									<span>Profile</span>
+								</a>
+							</li>
+							<li>
+								<a href="favourites.html">
+									<ion-icon name="heart-outline"></ion-icon>
+									<span>Favourites</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Main</li>
+							<li>
+								<a href="movies.html">
+									<ion-icon name="videocam-outline"></ion-icon>
+									<span>Movies</span>
+								</a>
+							</li>
+							<li class="uk-nav-header">Support</li>
+							<li>
+								<a href="https://movie.douban.com/">
+									<ion-icon name="help-circle-outline"></ion-icon>
+									<span>电影数据来源：豆瓣电影</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<main class="page-main">
+				<div class="uk-grid" data-uk-grid>
+					<div>
+						<div class="widjet --profile">
+							<div class="widjet__head">
+								<h3 class="uk-text-lead">Profile</h3>
+							</div>
+							<div class="widjet__body">
+								<div class="user-info">
+									<div class="user-info__avatar">
+										<img src="assets/img/profile.png" alt="profile">
+									</div>
+									<div class="user-info__box">
+										<div class="user-info__title">John Doe</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widjet --activity">
+							<div class="widjet__head">
+								<h3 class="uk-text-lead">Watching History</h3>
+							</div>
+							<div class="uk-grid uk-child-width-1-6@xl uk-child-width-1-4@l uk-child-width-1-3@s uk-flex-middle uk-grid-small"
+			data-uk-grid>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="movies">
+									<div class="game-card">
+										<div class="game-card__box">
+											<div class="game-card__media">
+												<a href="movie-profile.html">
+													<img src="https://img9.doubanio.com/view/photo/l/public/p2614359276.webp"
+				  alt="当幸福来敲门" />
+												</a>
+											</div>
+											<div class="game-card__info">
+												<a class="game-card__title" href="movie-profile.html">当幸福来敲门</a>
+												<div class="game-card__genre">剧情 / 家庭 / 传记</div>
+												<div class="game-card__rating-and-price">
+													<div class="game-card__rating">
+														<span>4.4</span>
+														<ion-icon name="star" class="star"></ion-icon>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</main>
+			</div>
+		</div>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="assets/js/libs.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/profile.js"></script>
+		<script type="text/javascript">
+			function postMovieId(obj) {
+				var movieId = $(obj).attr('movie_id');
+				$.post(window.globalConfig.baseUrl + '/post_movie_id', {
+					movieId : movieId,
+				});
+				window.location.href = window.globalConfig.baseUrl + '/movie-profile.html';
+			}
+		</script>
+	</body>
+
+</html>
