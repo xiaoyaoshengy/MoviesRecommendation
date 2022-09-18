@@ -55,8 +55,10 @@ $$
 本实验中使用梯度下降法求解该优化问题。根据损失函数可以得到参数 $b_u$ 和 $b_i$ 的更新公式：
 
 $$
-b_u:=b_u-\frac{\alpha}{2}\frac{\partial}{\partial b_u}J(b_u,b_i)=b_u+\alpha[\sum_{u,i}(r_{ui}-\mu-b_u-b_i)-\lambda b_u]\\
-b_i:=b_i-\frac{\alpha}{2}\frac{\partial}{\partial b_i}J(b_u,b_i)=b_i+\alpha[\sum_{u,i}(r_{ui}-\mu-b_u-b_i)-\lambda b_i]
+\begin{aligned}
+b_u&:=b_u-\frac{\alpha}{2}\frac{\partial}{\partial b_u}J(b_u,b_i)=b_u+\alpha[\sum_{u,i}(r_{ui}-\mu-b_u-b_i)-\lambda b_u]\\
+b_i&:=b_i-\frac{\alpha}{2}\frac{\partial}{\partial b_i}J(b_u,b_i)=b_i+\alpha[\sum_{u,i}(r_{ui}-\mu-b_u-b_i)-\lambda b_i]
+\end{aligned}
 $$
 
 其中， $\alpha$ 表示学习速率，通过合适的学习速率使参数 $b_u$ 和 $b_i$ 快速收敛到最优值附近。
@@ -143,8 +145,10 @@ Doc2Vec 算法的目标是创建文档的向量化表示。与词语不同，文
 对于 Baseline 算法，可以用均方根误差（RMSE）和平均绝对差（MAE）来评价算法。这两个数值的计算公式如下：
 
 $$
-RMSE=\sqrt{\frac{1}{N}\sum_{i=1}^N(\hat r-r)^2}\\
-MAE=\frac{1}{N}\sum_{i=1}^N|\hat r-r|
+\begin{aligned}
+RMSE&=\sqrt{\frac{1}{N}\sum_{i=1}^N(\hat r-r)^2}\\
+MAE&=\frac{1}{N}\sum_{i=1}^N|\hat r-r|
+\end{aligned}
 $$
 
 其中， $N$ 表示样本数目， $\hat r$ 表示预测评分， $r$ 表示真实评分。这两个数值越接近于 0 说明预测值与真实值越接近，即预测越准确。
